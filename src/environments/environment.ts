@@ -21,6 +21,19 @@ export const environment = {
   getFromDatabaseUrl:'https://shopperzoid.stackroute.io:8443/sellerProfile/api/v1/seller',
   updateToDatabaseUrl:'https://shopperzoid.stackroute.io:8443/sellerProfile/api/v1/seller'
 };
+  firebaseConfig:{
+  
+    apiKey: "AIzaSyAcBaLHaUkw5qopIHNyBPqJVGMJJ0B8J5Y";
+    const authDomain: "shopper-zoid-3f1f7.firebaseapp.com",
+    const databaseURL: "https://shopper-zoid-3f1f7.firebaseio.com",
+    const projectId: "shopper-zoid-3f1f7",
+    const storageBucket: "shopper-zoid-3f1f7.appspot.com",
+    const messagingSenderId: "47774423859",
+    const appId: "1:47774423859:web:a2e7799f44aa08910dbc46"
+          
+
+ }
+}
 
 /*
  * For easier debugging in development mode, you can import the following file
