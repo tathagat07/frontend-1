@@ -1,9 +1,41 @@
 .container{
-    margin-top: 75px;
-    background: -webkit-linear-gradient(left, #4eec64, #d5f154e8);
-    padding-bottom: 15px;
-    padding-top: 15px;
+    margin-top: 150px;
+    /* background: -webkit-linear-gradient(left, #4eec64, #d5f154e8); */
+    background-image: url("src/assets/home/footer.jpg");
+    padding-bottom: 70px;
+    padding-top: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-bottom: 0px;
 }
+
+.container h3 {
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+    font-weight: bold;
+}
+
+ng-template{
+    font-family: 'Courier New', Courier, monospace;
+}
+
 mat-form-field{
     width: 50%;
+}
+
+button{
+    padding:5px;
+    margin: 5px;
+}
+
+.btn-primary{
+    background-color: rgb(189, 190, 190);
+}
+
+.btn-danger{
+    background-color: rgb(131, 131, 131);
+}
+
+.btn-success{
+    background-color: rgb(32, 32, 32);
 }
