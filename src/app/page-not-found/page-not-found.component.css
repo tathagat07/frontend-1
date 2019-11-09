@@ -1,6 +1,6 @@
 .container {
     /* background-image: url(src/assets/logo.jpg); */
-    background: -webkit-linear-gradient(left, #4eec64, #d5f154e8);
+    background: -webkit-linear-gradient(left, #919692, #272726e8);
     background-size: 100%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -12,4 +12,5 @@ h1 {
     font-weight: bold;
     padding-top:20%;
     padding-bottom: 20%;
+    color: black;
 }
