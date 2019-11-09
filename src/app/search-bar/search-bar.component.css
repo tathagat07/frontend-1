@@ -12,7 +12,7 @@
 header.masthead {
     position: relative;
     /* background-image: linear-gradient(#352104e8, #ff9f0ee8); */
-    background: -webkit-linear-gradient(left, #4eec64, #d5f154e8);
+    background: url("src/assets/home/footer.jpg");
     /* background: url("../../assets/logo.jpg") no-repeat center center; */
     background-size: cover;
     padding-top: 5rem;

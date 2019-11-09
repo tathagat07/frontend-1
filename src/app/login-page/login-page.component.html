@@ -1,7 +1,7 @@
 <section class="container register mt-5">
     <div class="row">
         <div class="col-lg register-left">
-            <img src="assets/seller-registration/logo3.png" alt="logo" />
+            <img src="assets/seller-registration/logo.png" alt="logo" />
             <h3>Welcome</h3>
         </div>
 
@@ -36,7 +36,10 @@
                         <!--Log In Field (NOT A BUTTON)-->
                         <input type="submit" class="fadeIn fourth" value="Log In" />
                     </form>
-
+                     <!--Error message if user is not valid-->
+                     <div *ngIf="notRegistered">
+                        <h5>It seems you're not registered. Please provide valid login credentials or register.</h5>
+                    </div>
                     <!-- New User Registration Reminder Anchor-Tag Container -->
                     <div id="formFooter">
                         <a class="underlineHover" routerLink="/buyer-registration">New User ? Register now</a>

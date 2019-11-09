@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, from } from 'rxjs';
+import { environment } from 'src/environments/environment'
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,7 @@ export class SellerDashboardService {
       headers: new HttpHeaders({
         'Authorization': 'Bearer ' + localStorage.getItem('token')
       })};
-    return this._http.get<any>(`http://15.206.62.131:8080/sellerProfile/api/v1/seller/${sellerEmail}`,httpOptions);
+    return this._http.get<any>(environment.getFromDatabaseUrl+`${sellerEmail}`,httpOptions);
   }
 
   // saveToDatabase (bussinessData):Observable<any> {
@@ -27,7 +28,7 @@ export class SellerDashboardService {
       headers: new HttpHeaders({
         'Authorization': 'Bearer ' + localStorage.getItem('token')
       })};
-    return this._http.put<any>(`http://15.206.62.131:8080/sellerProfile/api/v1/seller`, seller,httpOptions);
+    return this._http.put<any>(environment.updateToDatabaseUrl, seller,httpOptions);
   }
 
 
