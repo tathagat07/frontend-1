@@ -38,11 +38,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { BuyerProfileService } from './services/buyer-profile.service';
 import { SocialLoginService } from './services/social-login.service';
-<<<<<<< HEAD
 import { IncartProductsComponent } from './incart-products/incart-products.component';
-=======
 import { LoggedInNavbarComponent } from './logged-in-navbar/logged-in-navbar.component';
->>>>>>> 9f7b4c400a94fba8d3c689f21bfdab1e071291ad
 
 
 const config = new AuthServiceConfig([
