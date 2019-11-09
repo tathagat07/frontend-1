@@ -1,8 +1,15 @@
 .container{
-    margin-top: 75px;
-    background: -webkit-linear-gradient(left, #4eec64, #d5f154e8);
-    padding-bottom: 15px;
-    padding-top: 15px;
+    background-color: white;
+    /* padding-bottom: 15px;
+    padding-top: 15px; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.outer-container{
+    margin-top: 150px;
+    background-image: url("src/assets/home/footer.jpg");
 }
 
 input{
