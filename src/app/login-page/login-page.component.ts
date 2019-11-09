@@ -16,6 +16,7 @@ export class LoginPageComponent implements OnInit {
   public password = '';
   private invalidLogin = true;
   public decodedToken;
+  public notRegistered=false;
 
   private loginForm = new FormGroup({
     Email: new FormControl("", [Validators.required, Validators.email]),
@@ -48,6 +49,9 @@ export class LoginPageComponent implements OnInit {
             this.router.navigate(['./seller-dashboard', {emailId:this.emailId}]);
           }
         }
+      },
+      error=>{
+        this.notRegistered=true;
       }
     ));
   }
