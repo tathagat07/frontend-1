@@ -1,0 +1,15 @@
+.container {
+    /* background-image: url(src/assets/logo.jpg); */
+    background: -webkit-linear-gradient(left, #4eec64, #d5f154e8);
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-top: 6%;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    padding-top:20%;
+    padding-bottom: 20%;
+}

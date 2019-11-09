@@ -1,0 +1,22 @@
+.container{
+    margin-top: 75px;
+    background: -webkit-linear-gradient(left, #4eec64, #d5f154e8);
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+input{
+    width: 100%;
+}
+
+#form{
+    width: 50%;
+}
+/* .wrapper{
+    margin-bottom: 5px;
+} */
+
+.add{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
