@@ -1,4 +1,10 @@
+<div *ngIf="notLoggedIn; then ifBlock; else elseBlock"></div>
+<ng-template #ifBlock>
 <app-navbar></app-navbar>
+</ng-template>
+<ng-template #elseBlock>
+  <app-logged-in-navbar></app-logged-in-navbar>
+</ng-template>
 <!--Navbar component goes here-->
 
 <!-- <router-outlet></router-outlet> -->
