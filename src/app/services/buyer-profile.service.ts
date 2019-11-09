@@ -2,14 +2,15 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Buyer } from '../buyer-profile/buyer';
+import { environment } from 'src/environments/environment'
 
 @Injectable({
   providedIn: 'root'
 })
 export class BuyerProfileService {
 
-  private get_url="http://15.206.62.131:8080/buyerProfile/api/v1/buyer";
-  private put_url="http://15.206.62.131:8080/buyerProfile/api/v1/buyer";
+  private get_url=environment.buyerProfileGetUrl;
+  private put_url=environment.buyerProfilePutUrl;
 
 
   constructor(private http: HttpClient) { }
