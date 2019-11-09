@@ -38,7 +38,11 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { BuyerProfileService } from './services/buyer-profile.service';
 import { SocialLoginService } from './services/social-login.service';
+<<<<<<< HEAD
 import { IncartProductsComponent } from './incart-products/incart-products.component';
+=======
+import { LoggedInNavbarComponent } from './logged-in-navbar/logged-in-navbar.component';
+>>>>>>> 9f7b4c400a94fba8d3c689f21bfdab1e071291ad
 
 
 const config = new AuthServiceConfig([
@@ -57,7 +61,7 @@ export function provideConfig() {
 }
 
 @NgModule({
-  declarations: [AppComponent, SearchBarComponent, TrendingDealsComponent, HomeComponent, SellerDashboardComponent, LoginPageComponent, SellerRegistrationComponent, BestDealsComponent, BuyerDashboardComponent, BuyerRegistrationComponent, SellerDashboardInventoryComponent, AddProductComponent, ProductDetailsComponent, UpdateProductComponent, BuyerProfileComponent, NavbarComponent, PageNotFoundComponent, FileUploadComponent, IncartProductsComponent],
+  declarations: [AppComponent, SearchBarComponent, TrendingDealsComponent, HomeComponent, SellerDashboardComponent, LoginPageComponent, SellerRegistrationComponent, BestDealsComponent, BuyerDashboardComponent, BuyerRegistrationComponent, SellerDashboardInventoryComponent, AddProductComponent, ProductDetailsComponent, UpdateProductComponent, BuyerProfileComponent, NavbarComponent, PageNotFoundComponent, FileUploadComponent, IncartProductsComponent, LoggedInNavbarComponent],
   imports: [Ng2CarouselamosModule, BrowserModule, AppRoutingModule, FormsModule, BrowserAnimationsModule, HttpClientModule, ReactiveFormsModule, ShopperZoidMaterialModule, SocialLoginModule],
   providers: [ProductService, SellerDashboardService, AuthenticationService, SellerRegistrationService, BuyerRegistrationService, BuyerProfileService, SocialLoginService,
    {

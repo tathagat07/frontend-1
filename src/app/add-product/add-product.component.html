@@ -31,7 +31,7 @@
           </ng-template>
         </mat-form-field>
         <div>
-          <button mat-button matStepperNext class="btn btn-primary">Next</button>
+          <button mat-button matStepperNext class="btn btn-success">Next</button>
         </div>
       </form>
     </mat-step>
@@ -49,7 +49,7 @@
           <app-file-upload></app-file-upload>
           <div>
             <button mat-button matStepperPrevious class="btn btn-primary">Back</button>
-            <button mat-button matStepperNext class="btn btn-primary">Next</button>
+            <button mat-button matStepperNext class="btn btn-success">Next</button>
           </div>
         </form>
       </ng-template>
@@ -86,9 +86,9 @@
           <input matInput placeholder="Price in Rupees" formControlName="price" type="number" required>
         </mat-form-field><br>
         <div>
-          <button mat-button matStepperPrevious class="btn btn-primary">Back</button>
-          <button mat-button (click)="stepper.reset()" class="btn btn-danger">Reset</button>
-          <button mat-button (click)="takeInfoProduct()" class="btn btn-success">Submit</button>
+          <button mat-button matStepperPrevious class="btn btn-primary ">Back</button>
+          <button mat-button (click)="stepper.reset()" class="btn btn-danger ">Reset</button>
+          <button mat-button (click)="takeInfoProduct()" class="btn btn-success ">Submit</button>
         </div>
       </form>
     </mat-step>
