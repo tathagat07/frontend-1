@@ -1,13 +1,17 @@
+<!--Navbar component goes here-->
 <!-- <div *ngIf="notOnPayment"> -->
+
 <div *ngIf="notLoggedIn; then ifBlock; else elseBlock"></div>
+
 <ng-template #ifBlock>
-<app-navbar></app-navbar>
+  <app-navbar></app-navbar>
 </ng-template>
+
 <ng-template #elseBlock>
   <app-logged-in-navbar></app-logged-in-navbar>
 </ng-template>
+
 <!-- </div> -->
-<!--Navbar component goes here-->
 
 <!-- <router-outlet></router-outlet> -->
 <!-- Routed components go here -->
@@ -72,34 +76,34 @@
 <section class="super_container">
 
   <router-outlet></router-outlet>
+  <!-- Routed components go here -->
 
   <div class="footer_overlay"></div>
-  <!-- <div *ngIf="notOnPayment"> -->
-    <footer class="footer">
-      <div class="footer_background"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
-              <div class="footer_logo"><a href="#">Shopper-Zoid.</a></div>
-                <div class="copyright ml-auto mr-auto">
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
-  <!-- | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  </div>
-              <div class="footer_social ml-lg-auto">
-                <ul>
-                  <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                </ul>
-              </div>
+  
+  <footer class="footer">
+    <div class="footer_background"></div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+            <div class="footer_logo"><a href="#">Shopper-Zoid.</a></div>
+            
+            <div class="copyright ml-auto mr-auto">
+              Copyright &copy;2019 All rights reserved 
+            </div>
+            
+            <div class="footer_social ml-lg-auto">
+              <ul>
+                <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-  <!-- </div>	  -->
+    </div><!--div of .container end-->
+  </footer>
 </section>

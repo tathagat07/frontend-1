@@ -50,12 +50,12 @@ export class ProductDetailsComponent implements OnInit {
     );
   }
 
-  // addToCart(){
-  //   this._productDetailsService.addProductToCart(this.product).subscribe();
-  // }
+  addToCart(){
+    // this._productDetailsService.addProductToCart(this.product).subscribe();
+  }
 
-  // addToWishlist(){
-  //   this._productDetailsService.addProductToWishlist(this.product).subscribe();
-  // }
+  addToWishlist(){
+    // this._productDetailsService.addProductToWishlist(this.product).subscribe();
+  }
 
 }

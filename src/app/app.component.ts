@@ -9,13 +9,16 @@ import { Router } from '@angular/router';
 })
 
 export class AppComponent implements OnInit{
+  
   title = "Shoppers-Zoid";
   public notLoggedIn:Boolean;
+  
   constructor(private authService:AuthenticationService, private router:Router){}
+  
   ngOnInit(): void {
-    console.log(this.router.url);
-    
+    console.log(this.router.url);  
     console.log(this.authService.isUserLoggedIn());
+    
     if(this.authService.isUserLoggedIn()){
       
       this.notLoggedIn=false;
