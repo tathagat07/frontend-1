@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from '../services/authentication.service';
 import { Router } from '@angular/router';
-import { PaymentComponent } from '../payment/payment.component';
+// import { PaymentComponent } from '../payment/payment.component';
 
 
 @Component({
@@ -11,11 +11,10 @@ import { PaymentComponent } from '../payment/payment.component';
 })
 export class LoggedInNavbarComponent implements OnInit {
  
-  public notOnPayment:Boolean = false;
-  constructor(private authService:AuthenticationService, private router:Router, private payment:PaymentComponent) { }
+  public notOnPayment:Boolean = true;
+  constructor(private authService:AuthenticationService, private router:Router) { }
 
   ngOnInit() {
-    this.notOnPayment = this.payment.notOnPayment;
   }
 
   logOut(){
