@@ -117,7 +117,7 @@
         <form class="form">
           <mat-form-field class="full-width">
             <mat-label><mat-icon>search</mat-icon> <b> Search</b></mat-label>
-            <input matInput placeholder="">
+            <input matInput (keydown.enter)="toSearch($event)" placeholder="">
           </mat-form-field>
         </form>
         <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
