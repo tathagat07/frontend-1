@@ -65,8 +65,7 @@
               "src/assets/home/plugins/parallax-js-master/parallax.min.js",
               "src/assets/home/plugins/scrollmagic/ScrollMagic.min.js",
               "src/assets/home/styles/bootstrap4/bootstrap.min.js",
-              "src/assets/home/styles/bootstrap4/popper.js",
-              "src/app/navbar/navbarTransition.js"
+              "src/assets/home/styles/bootstrap4/popper.js"
             ]
           },
           "configurations": {
