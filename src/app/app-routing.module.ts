@@ -32,6 +32,7 @@ const routes: Routes = [
   { path: 'update-product', component: UpdateProductComponent },
   { path: 'app-incart-products',component:IncartProductsComponent},
   //{ path: 'payment', component: PaymentComponent},
+  
   // Routes to be placed at the last
   { path: '', component: HomeComponent },
   { path: '**', component: PageNotFoundComponent }
