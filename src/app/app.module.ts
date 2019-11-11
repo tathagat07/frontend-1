@@ -38,8 +38,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { BuyerProfileService } from './services/buyer-profile.service';
 import { SocialLoginService } from './services/social-login.service';
-import { IncartProductsComponent } from './incart-products/incart-products.component';
 import { LoggedInNavbarComponent } from './logged-in-navbar/logged-in-navbar.component';
+import { IncartProductsComponent } from './incart-products/incart-products.component';
 
 
 const config = new AuthServiceConfig([
