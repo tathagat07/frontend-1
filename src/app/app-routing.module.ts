@@ -14,6 +14,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { UpdateProductComponent } from './update-product/update-product.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { IncartProductsComponent } from './incart-products/incart-products.component';
+import { PaymentService } from './services/payment.service';
+import { PaymentComponent } from './payment/payment.component';
 //import { PaymentComponent } from './payment/payment.component';
 
 const routes: Routes = [
@@ -31,6 +33,7 @@ const routes: Routes = [
   { path: 'product-details', component: ProductDetailsComponent },
   { path: 'update-product', component: UpdateProductComponent },
   { path: 'app-incart-products',component:IncartProductsComponent},
+  { path: 'payment', component:PaymentComponent},
   //{ path: 'payment', component: PaymentComponent},
   
   // Routes to be placed at the last

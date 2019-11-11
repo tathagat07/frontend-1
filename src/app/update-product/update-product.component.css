@@ -36,6 +36,12 @@ input{
     margin-bottom: 5px;
 }
 
-section h3{
+section h3, p{
     color: black;
 }
+
+p{
+    margin-top:50px;
+}
+
+
