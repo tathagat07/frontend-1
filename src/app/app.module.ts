@@ -40,6 +40,8 @@ import { BuyerProfileService } from './services/buyer-profile.service';
 import { SocialLoginService } from './services/social-login.service';
 import { LoggedInNavbarComponent } from './logged-in-navbar/logged-in-navbar.component';
 import { IncartProductsComponent } from './incart-products/incart-products.component';
+import { PaymentComponent } from './payment/payment.component';
+import { PaymentService } from './services/payment.service';
 
 
 const config = new AuthServiceConfig([
@@ -58,9 +60,9 @@ export function provideConfig() {
 }
 
 @NgModule({
-  declarations: [AppComponent, SearchBarComponent, TrendingDealsComponent, HomeComponent, SellerDashboardComponent, LoginPageComponent, SellerRegistrationComponent, BestDealsComponent, BuyerDashboardComponent, BuyerRegistrationComponent, SellerDashboardInventoryComponent, AddProductComponent, ProductDetailsComponent, UpdateProductComponent, BuyerProfileComponent, NavbarComponent, PageNotFoundComponent, FileUploadComponent, IncartProductsComponent, LoggedInNavbarComponent],
+  declarations: [AppComponent, SearchBarComponent, TrendingDealsComponent, HomeComponent, SellerDashboardComponent, LoginPageComponent, SellerRegistrationComponent, BestDealsComponent, BuyerDashboardComponent, BuyerRegistrationComponent, SellerDashboardInventoryComponent, AddProductComponent, ProductDetailsComponent, UpdateProductComponent, BuyerProfileComponent, NavbarComponent, PageNotFoundComponent, FileUploadComponent, IncartProductsComponent, LoggedInNavbarComponent, PaymentComponent],
   imports: [Ng2CarouselamosModule, BrowserModule, AppRoutingModule, FormsModule, BrowserAnimationsModule, HttpClientModule, ReactiveFormsModule, ShopperZoidMaterialModule, SocialLoginModule],
-  providers: [ProductService, SellerDashboardService, AuthenticationService, SellerRegistrationService, BuyerRegistrationService, BuyerProfileService, SocialLoginService,
+  providers: [ProductService, SellerDashboardService, AuthenticationService, SellerRegistrationService, BuyerRegistrationService, BuyerProfileService, SocialLoginService, PaymentService,
    {
     provide: AuthServiceConfig,
     useFactory: provideConfig

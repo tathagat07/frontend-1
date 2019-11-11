@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from '../services/authentication.service';
 import { Router } from '@angular/router';
+import { PaymentComponent } from '../payment/payment.component';
+
 
 @Component({
   selector: 'app-logged-in-navbar',
@@ -8,10 +10,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./logged-in-navbar.component.css']
 })
 export class LoggedInNavbarComponent implements OnInit {
-
-  constructor(private authService:AuthenticationService, private router:Router) { }
+ 
+  public notOnPayment:Boolean = false;
+  constructor(private authService:AuthenticationService, private router:Router, private payment:PaymentComponent) { }
 
   ngOnInit() {
+    this.notOnPayment = this.payment.notOnPayment;
   }
 
   logOut(){
