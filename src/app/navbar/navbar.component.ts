@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-var jQuery: any;
 
 @Component({
   selector: 'app-navbar',
@@ -15,8 +14,12 @@ export class NavbarComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-      
-  }
+    // $(document).on('click','.navbar-collapse.in',function(e) {
+    //   if( $(e.target).is('a:not(".dropdown-toggle")') ) {
+    //       $(this).collapse('hide');
+    //   }
+    // });  
+  }	
 
   toSearch(event){
     this.productName = event.target.value;
