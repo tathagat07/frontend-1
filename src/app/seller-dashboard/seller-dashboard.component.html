@@ -1,7 +1,9 @@
+
 <div class="d-flex" id="wrapper">
 
-    <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
+<!--Seller Dashboard mini-navbar-->
+<!-- Sidebar -->
+<div class="bg-light border-right" id="sidebar-wrapper">
         <div class="sidebar-heading">Account Setting </div>
         <div class="list-group list-group-flush">
         <a routerLink="seller-dashboard" class="list-group-item list-group-item-action bg-light">Home</a>
@@ -52,108 +54,166 @@
                 </ul>
             </div>
         </nav>
-        
-        <div class="container-fluid">
-            <div class="row">            
-                <div class="col-lg-12 profile-work buyer pull-right">
-                    <p>Welcome {{seller.sellerName}} !<br>Your registered E-Mail Id is: {{seller.sellerEmail}}<br><span *ngIf="init">Your
-                    registered GSTIN is: {{seller.sellerGstIn}}<br>Your registered contact is: {{seller.sellerPhone}}<br>Your
-                    registered address is: {{seller.sellerAddress}}</span></p><br>
+<!--Seller Dashboard mini-navbar -- End-->
+
+<!--Seller Dashboard Home View-->
+
+<div class="head">
+</div>
+<section class="container">
+    <hr>
+    <hr>
+    <section class="row mb-4">
+
+            <section class="col-md-6">
+                
+                <div class="check">
+
                 </div>
-            </div>
+            </section> 
+    <section>
+            <h3 class="text-center w-responsive mx-auto mb-5">
+                Welcome {{seller.sellerName}} <br> Your registered E-Mail Id is: {{seller.sellerEmail}}<br><span *ngIf="init">Your
+                    registered GSTIN is: {{seller.sellerGstIn}}<br>Your registered contact is: {{seller.sellerPhone}}<br>Your
+                    registered address is: {{seller.sellerAddress}}</span>
+                </h3>
+    </section>
+        
+<
+       
+    </section>
+    <!--Col-lg-6 -- End-->
+</section>
+<!--row -- End-->
+<!--Seller Dashboard Home View -- End-->
 
-            <section class="row mb-4">
-                <section class="col-lg-8">
-                    <h4>Update Bussiness Details</h4>
-                    <!--The Bussiness Details form-->
-                    <form #bussinessDetailsForm (ngSubmit)="updateData()" [formGroup]="businessForm">
-                        <!-- <section class="form-row align-items-center">
-                            <section class="col-auto">
-                                <input type="text" class="form-control mb-2" #sellerName [formControlName]="'sellerName'" placeholder="Seller Name" [attr.disabled]="submitted?'':null">
-                            </section>
-                        </section> -->
+<section>
 
-                        <section class="form-row align-items-center">
-                            <section class="col-auto">
-                                <!-- <input type="text" class="form-control mb-2" #GSTIN [formControlName]="'GSTIN'" placeholder="GSTIN" [attr.disabled]="submitted?'':null"> -->
-                                <input type="text" class="form-control mb-2" #GSTIN [formControlName]="'GSTIN'" placeholder="GSTIN">
-                            </section>
-                        </section>
-
-                        <!-- <section class="form-row align-items-center">
-                            <section class="col-auto">
-                                <input type="text" class="form-control mb-2" #bussinessType [formControlName]="'bussinessType'" placeholder="Bussiness Type" [attr.disabled]="!editable?'':null">
-                            </section>
-                        </section> -->
-
-                        <section class="form-row align-items-center">
-                            <section class="col-auto">
-                                <input type="number" class="form-control mb-2" #contact [formControlName]="'contact'" placeholder="Contact">
-                                <!-- <input type="number" class="form-control mb-2" #contact [formControlName]="'contact'" [ngClass]="{'is-invalid':businessForm.get('contact').touched && businessForm.get('contact').invalid}" placeholder="Contact"> -->
-                            </section>
-                        </section>
-                        <!-- <section class="form-row align-items-center">
-                            <section class="col-auto">
-                                <div *ngIf="businessForm.get('contact').touched && businessForm.get('contact').invalid" class="invalid-feedback">
-                                    <div *ngIf="businessForm.get('contact').errors.min">The contact should be at least 10 digits long...</div>
-                                    <div *ngIf="businessForm.get('contact').errors.max">The contact should be at most 10 digits long...</div>
+            <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card-deck">
+    
+                             <!--Foundation-->
+                            <div class="card">
+                                <div class="card-block">
+                                    <h2 class="number">1.</h2>
+                                    <h3 class="card-title">ADD A PRODUCT </h3>
                                 </div>
-                            </section>
-                        </section> -->
+                                <img src="assets/seller-dashboard/th27-ecommerce.jpeg" alt="Add a product" style="width: 100%;height: 60%;" />
+                                <div class="card-block wrapper">
+                                        <h4>You can add information about a product such as its price, variants, and availability from the Inventory page in the sidebar.</h4>
+                                </div>
+                            </div>
+                            <!--Foundation end-->
+    
+                            <!--HTML and CSS-->
+    
+                            <div class="card">
+                                <div class="card-block">
+                                        <h2 class="number">2.</h2>
+                                    <h3 class="card-title"> ENTER PRODUCT DETAILS</h3>
+                                </div>
+                                <img src="assets/seller-dashboard/Benefits-of-selling-products-online-in-India-800x445.jpg" alt="Enter details"style="width: 100%;height: 60%;" >
+                                <div class="card-block wrapper">
+                                        <h4>You can add information about a product such as its price, variants, and availability from the Inventory page in the sidebar.</h4>
+                                </div>
+                            </div>
+                            
+                             <!--HTML and CSS end-->
+    
+                            <!--Angular JS-->
+    
+                            <div class="card">
+                                <div class="card-block">
+                                        <h2 class="number">3.</h2>
+                                    <h3 class="card-title">BOOST YOUR BUSIENESS</h3>
+                                </div>
+                                <img src="assets/seller-dashboard/happy-selling-products-online-seller-600w-1037992996.webp" alt="Boost Your busieness"style="width: 100%;height: 60%;">
+                                <div class="card-block wrapper">
+                                        <h4>Our responsibility is to make your busieness more successful and boost your busieness.</h4>
+                                </div>
+                            </div>
+    
+                            <!--Angular JS end-->
+                        </div>
+                    </div>
+                </div>
+</section>
 
-                        <section class="form-row align-items-center">
-                            <section class="col-auto">
-                                <input type="text" class="form-control mb-2" #sellerAddress [formControlName]="'sellerAddress'" placeholder="Seller Address">
-                            </section>
-                        </section>
+<!--Contact form-->
+<section class="mb-4" id="contact">
+    <div class="container">
 
-                        <!-- <section class="form-row align-items-center">
-                            <section class="col-auto">
-                                <input type="text" class="form-control mb-2" #eMail [formControlName]="'eMail'" placeholder="E-Mail" [attr.disabled]="!editable?'':null">
-                            </section>
-                        </section>     -->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Update Your Details</h2>
 
-                        <section class="form-row align-items-center">
-                            <!-- <section class="col-auto" *ngIf="!editable">
-                                <button type="button" name="editBtn" #editBtn class="btn btn-primary mb-2" (click)="toggleEditable()">Edit</button>
-                            </section> -->
+    <h3 class="text-center w-responsive mx-auto mb-5">For Connect With Us.. </h3>
 
-                            <!-- <section class="col-auto" *ngIf="editable">
-                                <button type="submit" name="saveBtn" #saveBtn class="btn btn-primary mb-2">Save</button>
-                            </section> -->
+    <div class="row">
+
+        <div class="container">
+            <div class="col-md-12">
+                <form #bussinessDetailsForm (ngSubmit)="updateData()" [formGroup]="businessForm" >
+
+                    <div class="row">
+
+                        <!--GSTIN-->
+                        <div class="col-md-12">
+                            <div >
+                                    <input type="text" class="form-control mb-2" #GSTIN [formControlName]="'GSTIN'" placeholder="GSTIN">
+                                <label for="name" class="">GSTIN</label>
+                            </div>
+                        </div>
+                        <!--GSTIN-->
+
+                    
+
+                    </div>
+
+                    <!--Contact-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div >
+                                    <input type="number" class="form-control mb-2" #contact [formControlName]="'contact'" placeholder="Contact">
+                        
+                                <label for="subject" class="">Contact</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Cintact end-->
+
+                    <!--Address-->
+                    <div class="row">
+
+                        <div class="col-md-12">
+
+                            <div >
+                                <textarea type="text" class="form-control mb-2" #sellerAddress [formControlName]="'sellerAddress'" placeholder="Seller Address"></textarea>
+                                <label for="message">Your Address</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Address end-->
+
+                    <section class="form-row align-items-center">
+                    
                             <section class="col-auto">
                                 <button type="submit" name="saveBtn" #saveBtn class="btn btn-primary mb-2">Save</button>
                             </section>
                         </section>
                         <p>{{greeting}}</p>
-                    </form>
-                    <!--The Bussiness Details form -- End-->
 
-                    <!--Orders and Returns section-->
-                    <section class="row mt-3">
-                        <section class="col-lg-3">
-                            <h4>Orders</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet posuere ligula. Ut rutrum et eros et rhoncus.</p>
-                        </section>
+                </form>
 
-                        <section class="col-lg-3">
-                            <h4>Returns</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet posuere ligula. Ut rutrum et eros et rhoncus.</p>
-                        </section>
-                    </section>
-                    <!--Orders and Returns section -- End-->
-                </section>
-                <!--Col-lg-6 -- End-->
+                
+            </div>
+            <!--Form end-->
 
-                <section class="col-lg-4">
-                    <h4>Payment Status</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet posuere ligula. Ut rutrum et eros et rhoncus. Suspendisse faucibus ipsum sed lectus suscipit condimentum. Quisque at dignissim lacus, vitae pharetra magna. Vestibulum
-                    quis euismod justo, eget iaculis est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce id convallis tortor. Morbi mollis ipsum pharetra mauris lobortis volutpat. Ut in consectetur sem.</p>
-                </section>
-            </section>
+        
+
         </div>
     </div>
-    <!-- /#page-content-wrapper -->
 </div>
- <!-- /#wrapper -->
-
+</section>
+<!--Contact end-->
+</div>

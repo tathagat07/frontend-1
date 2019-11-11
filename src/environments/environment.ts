@@ -15,9 +15,9 @@ export const environment = {
   buyerProfilePutUrl:'https://shopperzoid.stackroute.io:8443/buyerProfile/api/v1/buyer',
   buyerAddUrl:'https://shopperzoid.stackroute.io:8443/buyerProfile/api/v1/buyer',
   dealsUrl:'https://shopperzoid.stackroute.io:8443/deals/api/v1/products',
-  findProductUrl:'https://shopperzoid.stackroute.io:8443/deals/api/v1/product',
-  findProductByNameUrl:'https://shopperzoid.stackroute.io:8443/deals/api/v1/product',
-  findSellerByIdUrl:'https://shopperzoid.stackroute.io:8443/deals/api/v1/products',
+  findProductUrl:'https://shopperzoid.stackroute.io:8443/deals/api/v1/product/',
+  findProductByNameUrl:'https://shopperzoid.stackroute.io:8443/deals/api/v1/product/',
+  findSellerByIdUrl:'https://shopperzoid.stackroute.io:8443/deals/api/v1/products/',
   getFromDatabaseUrl:'https://shopperzoid.stackroute.io:8443/sellerProfile/api/v1/seller',
   updateToDatabaseUrl:'https://shopperzoid.stackroute.io:8443/sellerProfile/api/v1/seller',
   firebaseConfig:{

@@ -11,6 +11,7 @@ export class BestDealsComponent implements OnInit {
   public products =  {};
   public searchProductName={};
   public isCheckedMore=true;
+  public isData=true;
   constructor(private route: ActivatedRoute,private _dealsService : DealsService,private router: Router) { }
 
   ngOnInit() {
@@ -20,12 +21,17 @@ export class BestDealsComponent implements OnInit {
     this._dealsService.findProduct(this.searchProductName).subscribe(data => {
       if(data) {
         console.log("#########")
-
+        this.isData=true;
         this.products = data
       }
 
       console.log("*****"+this.products);
-    });
+    },
+    _error=>{
+      console.log(_error);
+      this.isData=false;
+    }
+);
     // console.log(this.products);
   }
   toSearch(productName){

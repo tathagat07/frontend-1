@@ -28,7 +28,8 @@ export class DealsService {
   }
 
   public findProduct(productName) {
-    return this.http.get(environment.findProductUrl+`${productName}`);
+    console.log(environment.findSellerByIdUrl+`${productName}`);
+    return this.http.get(environment.findSellerByIdUrl+`${productName}`);
   }
 
   public findProductByName(productName){

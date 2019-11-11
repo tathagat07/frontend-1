@@ -1,6 +1,6 @@
 .container {
     /* background-image: url(src/assets/logo.jpg); */
-    background: -webkit-linear-gradient(left, #919692, #272726e8);
+    background: url(src/assets/home/footer.jpg);
     background-size: 100%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -10,6 +10,7 @@
 h1 {
     text-align: center;
     font-weight: bold;
+    color: rgb(54, 53, 53);
     padding-top:20%;
     padding-bottom: 20%;
     color: black;
